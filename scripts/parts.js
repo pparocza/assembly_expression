@@ -359,8 +359,6 @@ class RampingConvolver{
 
         this.aG = new MyGain( 0 );
         this.aB = new MyBuffer2( 1 , 1 , audioCtx.sampleRate );
-        this.aB.noise().fill( 0 );
-        this.aB.constant( 0.25 ).multiply( 0 );
         this.aB.ramp( ...rampArray ).fill( 0 );
         this.aB.loop = true;
         this.aB.playbackRate = rate;
