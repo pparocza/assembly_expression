@@ -9,7 +9,7 @@ class Piece {
         this.globalNow = 0;
 
         this.gain = audioCtx.createGain();
-        this.gain.gain.value = 8;
+        this.gain.gain.value = 6;
     
         this.fadeFilter = new FilterFade(0);
 
@@ -131,9 +131,9 @@ class Piece {
 
                 this.rC1.load( this.rate * randomFloat( 0.0625 , 1 ) , [ 0 , 1 , 0.5 , 0.5 , 1 , 1 ] , randomArrayValue( [ 2 ])                  , this.fund * 0.5 , [ 100 , 500 ]   , this.gainVal * 2 );
                 this.rC2.load( this.rate * randomFloat( 0.0625 , 1 ) , [ 0 , 1 , 0.5 , 0.5 , 1 , 1 ] , randomArrayValue( [ 1 ])                  , this.fund       , [ 100 , 500 ]   , this.gainVal * 2 );
-                this.rC3.load( this.rate * randomFloat( 0.0625 , 1 ) , [ 0 , 1 , 0.5 , 0.5 , 1 , 1 ] , randomArrayValue( [ 0.25 , 0.5 , 1 , 2 ]) , this.fund       , [ 4000 , 7000 ] , this.gainVal * 1.5 );
+                this.rC3.load( this.rate * randomFloat( 0.0625 , 1 ) , [ 0 , 1 , 0.5 , 0.5 , 1 , 1 ] , randomArrayValue( [ 0.25 , 0.5 , 1 , 2 ]) , this.fund       , [ 4000 , 7000 ] , this.gainVal * 2 );
                 this.rC4.load( this.rate * randomFloat( 0.0625 , 1 ) , [ 0 , 1 , 0.5 , 0.5 , 1 , 1 ] , randomArrayValue( [ 0.25 , 0.5 , 1 , 2 ]) , this.fund       , [ 100 , 1000 ]  , this.gainVal * 3 );
-                this.rC5.load( this.rate * randomFloat( 0.0625 , 1 ) , [ 0 , 1 , 0.5 , 0.5 , 1 , 1 ] , randomArrayValue( [ 0.5 , 1 , 2 ])        , this.fund * 0.5 , [ 100 , 5000 ]  , this.gainVal * 3 );
+                this.rC5.load( this.rate * randomFloat( 0.0625 , 1 ) , [ 0 , 1 , 0.5 , 0.5 , 1 , 1 ] , randomArrayValue( [ 0.5 , 1 , 2 ])        , this.fund * 0.5 , [ 100 , 5000 ]  , this.gainVal * 2 );
 
                 this.rC2A.load( this.rate * randomFloat( 0.0625 , 1 ) , [ 0 , 1 , 0.5 , 0.5 , 1 , 1 ] , 2 , this.fund       , [ 100 , 1000 ] , this.gainVal * 2.5 );
                 this.rC3A.load( this.rate * randomFloat( 0.0625 , 1 ) , [ 0 , 1 , 0.5 , 0.5 , 1 , 1 ] , 2 , this.fund * 0.5 , [ 100 , 5000 ] , this.gainVal * 1.5 );
